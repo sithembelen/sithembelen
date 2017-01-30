@@ -205,7 +205,7 @@ blockquote p {
     
 }
 span,.proSkill{
-    color:#53C06B !important;
+    color:white!important;
     border: none;
 }
 blockquote cite {
@@ -700,7 +700,7 @@ button.button-primary,
 input[type="submit"].button-primary,
 input[type="reset"].button-primary,
 input[type="button"].button-primary {
-	background: #1f1f1f;
+	background: black;
 	color: #FFFFFF;
     border-radius: 10px;
 }
@@ -715,7 +715,7 @@ button.button-primary:focus,
 input[type="submit"].button-primary:focus,
 input[type="reset"].button-primary:focus,
 input[type="button"].button-primary:focus {
-	background: #cec7c7;
+	background: #4F028B;
 }
 button.full-width, .button.full-width {
 	width: 100%;
@@ -733,7 +733,7 @@ button.large, .button.large {
 }
 button.stroke, .button.stroke {
 	background: transparent !important;
-	border: 3px solid #313131;
+	border: 3px solid black;
 	line-height: 4.8rem;
     border-radius: 10px;
 }
@@ -744,8 +744,8 @@ button.stroke.large, .button.stroke.large {
 	line-height: 5.4rem !important;
 }
 button.stroke:hover, .button.stroke:hover {
-	border: 3px solid lightblue;
-	color: lightblue;
+	border: 3px solid #4F028B;
+	color: #4F028B;
 }
 button::-moz-focus-inner, input::-moz-focus-inner {
 	border: 0;
@@ -952,12 +952,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin: 6rem 0 3rem;
 }
 .skill-bars li {
-	height: .6rem;
-	background: #a1a1a1;
+	height: 2.8rem;
+	background: white;
 	width: 100%;
 	margin-bottom: 6rem;
 	padding: 0;
 	position: relative;
+    border-radius: 30px;
 }
 .skill-bars li strong {
 	position: absolute;
@@ -971,9 +972,10 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	line-height: 2.4rem;
 }
 .skill-bars li .progress {
-	background: #313131;
+	background: #504e52;
 	position: relative;
 	height: 100%;
+    border-radius: 30px;
 }
 .skill-bars li .progress span {
 	position: absolute;
@@ -1028,10 +1030,13 @@ button::-moz-focus-inner, input::-moz-focus-inner {
  * ------------------------------------------------------------------- 
  */
 .grey-section {
-	background: #ebebeb;
+	background: #66CA2B;
 }
 .grey-section p.lead {
-	color: #7d7d7d;
+	color: lightblue;
+}
+.grey-section p{
+	color: white !important;
 }
 .section-intro {
 	max-width: 700px;
@@ -1303,6 +1308,10 @@ header .logo a {
  */
 #intro {
 	background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -ms-transition: all .5s ease-in-out;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
@@ -1314,6 +1323,7 @@ header .logo a {
 	position: relative;
 	text-align: center;
 }
+
 .intro-overlay {
 	position: absolute;
 	top: 0;
@@ -1498,10 +1508,16 @@ header .logo a {
  * ------------------------------------------------------------------- 
  */
 #about {
-	background: rgba(0, 255, 10, 0.41);
+	background: #68d395;
 	padding-top: 12rem;
 	padding-bottom: 15rem;
     
+}
+#about h5{
+	color: rebeccapurple;
+    
+}#about p{
+    color: white !important ;    
 }
 #about .section-intro {
 	margin-bottom: 3rem;
@@ -1543,7 +1559,7 @@ header .logo a {
 }
 .about-content h3 {
 	font-family: "poppins-bold", sans-serif;
-	font-size: 1.8rem;
+	font-size: 2.8rem;
 	text-transform: uppercase;
 	letter-spacing: .25rem;
 }
@@ -2598,7 +2614,7 @@ footer .copyright span:last-child::after {
 	width: 6rem;
 	line-height: 6.6rem;
 	text-align: center;
-	background: lightblue;
+	background: rgba(0, 255, 10, 0.41);
 	color: #FFFFFF;
 	text-align: center;
 	text-transform: uppercase;
