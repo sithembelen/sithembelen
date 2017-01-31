@@ -958,7 +958,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	margin-bottom: 6rem;
 	padding: 0;
 	position: relative;
-    border-radius: 30px;
+    border-radius: 5px;
 }
 .skill-bars li strong {
 	position: absolute;
@@ -975,7 +975,8 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	background: #504e52;
 	position: relative;
 	height: 100%;
-    border-radius: 30px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
 }
 .skill-bars li .progress span {
 	position: absolute;
@@ -1434,7 +1435,7 @@ header .logo a {
 	color: #FFFFFF;
 }
 .intro-social li a:hover, .intro-social li a:focus {
-	color: lightblue;
+	color: #3c9fbf;
 }
 
 /**
@@ -2398,11 +2399,12 @@ header .logo a {
 	padding: 0 3rem;
 	margin-top: 4.8rem;
 	width: 100%;
-	background: lightblue;
+	background: #444;
 	color: #FFFFFF;
+    border-radius: 10px;
 }
 #contact button.submitform:hover, #contact button.submitform:focus {
-	background: lightblue;
+	background: #767272;
 }
 #message-warning, #message-success {
 	display: none;
