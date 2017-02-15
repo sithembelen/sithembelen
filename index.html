@@ -389,7 +389,7 @@
 		<div class="row section-intro">
    		<div class="col-twelve">
 
-   			<h5>Portfolio</h5>
+   			<h5>Projects</h5>
    			<!--<h1>Check Out Some of My Works.</h1>
 
    			<p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>-->
@@ -400,7 +400,7 @@
    	<div class="row portfolio-content">
         
    		<div class="col-twelve">
-            <img src="images/underConstruction.png" alt="" title="Under construction" style="margin-left:20%;">
+            <div id="container" style="min-width: 400px; height: 400px; max-width: 600px; margin: 0 auto; border: 1px solid lightblue; border-radius: 10px; padding: 5px 5px;"></div>
    			<!-- portfolio-wrapper
 	         <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
 
@@ -669,7 +669,7 @@
 
 		<div class="row section-intro">
    		<div class="col-twelve">
-            
+            <div id="container" style="min-width: 400px; height: 400px; max-width: 600px; margin: 0 auto;"></div>
    			<!--<h5>Services</h5>
    			<h1>What Can I Do For You?</h1>
 
@@ -1047,6 +1047,52 @@
    <script src="js/jquery-2.1.3.min.js"></script>
    <script src="js/plugins.js"></script>
    <script src="js/main.js"></script>
+   <script src="https://code.highcharts.com/highcharts.js"></script>
+   <script src="https://code.highcharts.com/modules/exporting.js"></script>
+   <script>
+      Highcharts.chart('container', {
+    chart: {
+        type: 'pie',
+        options3d: {
+            enabled: true,
+            alpha: 45,
+            beta: 0
+        }
+    },
+    title: {
+        text: 'Unakho Fire EMS Web design'
+    },
+    tooltip: {
+        pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+    },
+    plotOptions: {
+        pie: {
+            allowPointSelect: true,
+            cursor: 'pointer',
+            depth: 35,
+            dataLabels: {
+                enabled: true,
+                format: '{point.name}'
+            }
+        }
+    },
+    series: [{
+        type: 'pie',
+        name: 'Skill level used',
+        data: [
+            ['HTML', 55.0],
+            ['Bootstrap', 25.0],
+            {
+                name: 'CSS',
+                y: 19.0,
+                sliced: true,
+                selected: true
+            },
+            ['Other', 1.0]
+        ]
+    }]
+});
+   </script>
 
 </body>
 
